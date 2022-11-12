@@ -17,9 +17,9 @@ app.get("/",  (req, res) => {
 // your code here
 app.get("/multiply/:number", (req, res)=>{
   let result = req.params.number * process.env.MULTIPLIER
-  res.send({result})
+  res.send(`The answer is: ${result}`)
 
-})
+});
 
 
 app.use(notFound)
